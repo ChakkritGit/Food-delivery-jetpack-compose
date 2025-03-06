@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -75,11 +76,10 @@ private fun ProductFlavorItem(
             )
     ) {
         Column(
-            modifier = Modifier
-                .padding(
-                    vertical = 20.dp, horizontal = 8.dp
-                )
-                .fillMaxSize(),
+            modifier = Modifier.padding(
+                vertical = 24.dp,
+                horizontal = 8.dp
+            ),
             verticalArrangement = Arrangement.spacedBy(8.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -87,8 +87,7 @@ private fun ProductFlavorItem(
                 painter = painterResource(id = state.imgRes),
                 contentDescription = null,
                 contentScale = ContentScale.FillWidth,
-                modifier = Modifier
-                    .fillMaxSize(),
+                modifier = Modifier.fillMaxWidth().heightIn(min = 100.dp, max = 200.dp)
             )
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
