@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -78,8 +79,7 @@ private fun ProductFlavorItem(
                 .padding(
                     vertical = 20.dp, horizontal = 8.dp
                 )
-                .fillMaxWidth()
-                .height(130.dp),
+                .fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(8.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -88,8 +88,7 @@ private fun ProductFlavorItem(
                 contentDescription = null,
                 contentScale = ContentScale.FillWidth,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(80.dp),
+                    .fillMaxSize(),
             )
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally

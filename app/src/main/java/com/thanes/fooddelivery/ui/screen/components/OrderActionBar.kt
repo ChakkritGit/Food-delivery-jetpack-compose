@@ -86,7 +86,7 @@ private fun Selector(
             horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             SelectorButton(
-                iconRes = R.drawable.ic_plus,
+                iconRes = R.drawable.ic_minus,
                 containerColor = AppTheme.colors.actionSurface,
                 contentColor = AppTheme.colors.onActionSurface,
                 onClicked = onRemoveItemClicked
@@ -129,7 +129,7 @@ private fun SelectorButton(
             Icon(
                 painter = painterResource(id = iconRes),
                 contentDescription = null,
-                modifier = Modifier.size(7.dp)
+                modifier = Modifier.size(18.dp)
             )
         }
     }
